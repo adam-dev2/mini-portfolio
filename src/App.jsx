@@ -132,7 +132,39 @@ const App = () => {
             ))}
           </motion.div>
         </div>
+          <div className="mt-20 pb-4">
+          <h1 className="text-purple-400 font-semibold text-3xl">Blender Projects</h1>
+          <p className="pt-3 font-light text-md opacity-80 max-w-xl font-sans">
+            A few 3D environments I’ve created using Blender — capturing lighting, mood, and storytelling.
+          </p>
 
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
+            {[1, 2, 3, 4].map((_, index) => (
+              <motion.div
+                key={index}
+                variants={cardVariants}
+                className="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:scale-105 transition"
+              >
+                <img
+                  src={`/blender-${index + 1}.jpg`} // Place these in /public/blender/
+                  alt={`Blender Art ${index + 1}`}
+                  className="object-cover w-full h-56"
+                />
+                <div className="p-4">
+                  <h3 className="text-white text-md font-semibold">Blender Scene {index + 1}</h3>
+                  <p className="text-sm text-gray-400 mt-1">
+                    A short description or mood you captured (e.g., sci-fi corridor, night city, abandoned ruin)
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </motion.div>
     </div>
   );

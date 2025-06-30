@@ -5,6 +5,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import projects from "./projects";
 import experiences from "./experience";
+import blenderProjects from "./blenderProjects";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -132,10 +133,11 @@ const App = () => {
             ))}
           </motion.div>
         </div>
-          <div className="mt-20 pb-4">
+
+        <div className="mt-20 pb-4">
           <h1 className="text-purple-400 font-semibold text-3xl">Blender Projects</h1>
           <p className="pt-3 font-light text-md opacity-80 max-w-xl font-sans">
-            A few 3D environments I’ve created using Blender — capturing lighting, mood, and storytelling.
+            Besides coding, I enjoy crafting cinematic 3D scenes in Blender. These are a few personal explorations where I focused on lighting, mood, and storytelling through environment design.
           </p>
 
           <motion.div
@@ -144,26 +146,42 @@ const App = () => {
             initial="hidden"
             animate="visible"
           >
-            {[1, 2, 3, 4].map((_, index) => (
+            {blenderProjects.map((project, index) => (
               <motion.div
                 key={index}
                 variants={cardVariants}
                 className="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:scale-105 transition"
               >
                 <img
-                  src={`/blender-${index + 1}.jpg`} // Place these in /public/blender/
-                  alt={`Blender Art ${index + 1}`}
+                  src={project.image}
+                  alt={project.title}
                   className="object-cover w-full h-56"
                 />
                 <div className="p-4">
-                  <h3 className="text-white text-md font-semibold">Blender Scene {index + 1}</h3>
-                  <p className="text-sm text-gray-400 mt-1">
-                    A short description or mood you captured (e.g., sci-fi corridor, night city, abandoned ruin)
-                  </p>
+                  <h3 className="text-white text-md font-semibold">{project.title}</h3>
+                  <p className="text-sm text-gray-400 mt-1">{project.description}</p>
                 </div>
               </motion.div>
             ))}
           </motion.div>
+        </div>
+        <div className="pb-10 mt-14">
+            <div className="border-b-1 border-zinc-700 opacity-70"></div>
+            <div className="flex justify-between pt-4">
+              <p className="opacity-90 text-zinc-500">Adam</p>
+
+              <div className="flex justify-end gap-10 mt-2">
+                <a className="hover:scale-105" href="https://x.com/dev_adam2" target="_blank" rel="noreferrer">
+                  <FaXTwitter className="opacity-60" size={16} />
+                </a>
+                <a className="hover:scale-105" href="https://medium.com/@shaikadam273" target="_blank" rel="noreferrer">
+                  <LuBookOpen className="opacity-60" size={16} />
+                </a>
+                <a className="hover:scale-105" href="https://github.com/adam-dev2" target="_blank" rel="noreferrer">
+                  <FiGithub className="opacity-60" size={16} />
+                </a>
+              </div>
+            </div>
         </div>
       </motion.div>
     </div>

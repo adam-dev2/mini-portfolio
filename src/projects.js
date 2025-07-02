@@ -27,7 +27,7 @@ const projects = [
       description: "A personal portfolio showcasing skills, projects, and contact information.",
       technologies: ["React", "Tailwind CSS", "Framer Motion"],
       github: "https://github.com/adam-dev2/Portfolio",
-      demo: "https://portfolio-m36s.onrender.com/",
+      demo: "https://madebyadam.xyz",
     },
   ];
 

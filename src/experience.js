@@ -10,23 +10,23 @@ const experiences = [
     ],
   },
   {
-    role: "Backend Developer Intern",
-    company: "Rablo",
-    duration: "May 2025 – July 2025",
-    bullets: [
-      "Worked on RESTful APIs using Express and MongoDB.",
-      "Built authentication and middleware pipelines.",
-      "Collaborated on backend architecture and deployment."
-    ],
-  },
-  {
-    role: "Full Stack Developer Intern",
+    role: "Front-end Developer",
     company: "Trip and Thrill",
-    duration: "May 2024 – Oct 2024",
+    duration: "June 2025 – July 2025",
     bullets: [
       "Contributed to front-end design and API versioning.",
       "Integrated third-party APIs and handled secure data flow.",
       "Wrote reusable controller modules and optimized DB queries."
+    ],
+  },
+  {
+    role: "Backend Developer Intern",
+    company: "Rablo",
+    duration: "May 2025 – June 2025",
+    bullets: [
+      "Worked on RESTful APIs using Express and MongoDB.",
+      "Built authentication and middleware pipelines.",
+      "Collaborated on backend architecture and deployment."
     ],
   },
 ];

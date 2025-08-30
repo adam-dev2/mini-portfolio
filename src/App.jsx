@@ -64,9 +64,9 @@ const App = () => {
 
         <div className="mb-10 space-y-2">
           <h1 className="text-3xl font-light">Hey, I'm Adam</h1>
-          <p className="text-sm text-gray-200">22, India | Full Stack Engineer</p>
+          <p className="text-sm text-gray-200">22, India | Automation Engineer</p>
           <p className="text-gray-300/80 max-w-xl text-sm">
-            I'm a Full Stack Developer crafting scalable and intuitive web platforms. From building responsive frontends to architecting robust backends, I turn complex ideas into seamless user experiences.
+            I'm a Automation Engineer and Full Stack Developer crafting scalable and intuitive web platforms. From building responsive frontends to architecting robust backends, I turn complex ideas into seamless user experiences.
           </p>
         </div>
 

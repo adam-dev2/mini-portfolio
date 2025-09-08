@@ -58,12 +58,12 @@ const App = () => {
           <img
             src="./profile.jpg"
             alt="profile"
-            className="rounded-2xl w-28 h-28 object-cover"
+            className="rounded-3xl w-36 h-36 object-cover"
           />
         </div>
 
         <div className="mb-10 space-y-2">
-          <h1 className="text-3xl font-light">Hey, I'm Adam</h1>
+          <h1 className="text-3xl font-light">Hello!, I'm Adam</h1>
           <p className="text-sm text-gray-200">22, India | Automation Engineer</p>
           <p className="text-gray-300/80 max-w-xl text-sm">
             I'm a Automation Engineer and Full Stack Developer crafting scalable and intuitive web platforms. From building responsive frontends to architecting robust backends, I turn complex ideas into seamless user experiences.
@@ -85,7 +85,7 @@ const App = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="bg-neutral-900 border border-neutral-800 rounded-xl p-5 hover:scale-105 transition"
+                className="bg-neutral-900 border border-neutral-800 rounded-3xl p-5 hover:scale-105 transition"
               >
                 <h2 className="text-lg font-semibold text-white">
                   {exp.role} @ {exp.company}
@@ -117,7 +117,7 @@ const App = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="bg-neutral-900 border border-neutral-800 rounded-xl p-4 hover:shadow-md transition hover:scale-105"
+                className="bg-neutral-900 border border-neutral-800 rounded-3xl p-4 hover:shadow-md transition hover:scale-105"
               >
                 <h2 className="text-lg font-semibold text-white">{project.title}</h2>
                 <p className="text-sm text-gray-400 mt-2">{project.description}</p>
@@ -150,7 +150,7 @@ const App = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="bg-neutral-900 border border-neutral-800 rounded-xl overflow-hidden hover:scale-105 transition"
+                className="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden hover:scale-105 transition"
               >
                 <img
                   src={project.image}

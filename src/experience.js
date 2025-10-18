@@ -1,6 +1,6 @@
 const experiences = [
   {
-    role: "Automation Intern",
+    role: "Automation Engineer",
     company: "SafeAeon",
     duration: "July 2025 – Present",
     bullets: [

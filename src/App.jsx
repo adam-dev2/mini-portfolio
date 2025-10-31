@@ -85,7 +85,7 @@ const App = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="bg-neutral-900 border border-neutral-800 rounded-3xl p-5 hover:scale-105 transition"
+                className="bg-neutral-900 border border-neutral-800 rounded-3xl p-5 hover:scale-102 transition"
               >
                 <h2 className="text-lg font-semibold text-white">
                   {exp.role} @ {exp.company}
@@ -117,7 +117,7 @@ const App = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="bg-neutral-900 border border-neutral-800 rounded-3xl p-4 hover:shadow-md transition hover:scale-105"
+                className="bg-neutral-900 border border-neutral-800 rounded-3xl p-4 hover:shadow-md transition hover:scale-102"
               >
                 <h2 className="text-lg font-semibold text-white">{project.title}</h2>
                 <p className="text-sm text-gray-400 mt-2">{project.description}</p>
@@ -125,9 +125,9 @@ const App = () => {
                   <a href={project.github} target="_blank" rel="noreferrer" className="opacity-80">
                     <FiGithub size={18} />
                   </a>
-                  <a href={project.demo} target="_blank" rel="noreferrer" className="opacity-70">
+                  {project.live && <a href={project.demo} target="_blank" rel="noreferrer" className="opacity-70">
                     <FaArrowUpRightFromSquare size={17} />
-                  </a>
+                  </a>}
                 </div>
               </motion.div>
             ))}
@@ -150,7 +150,7 @@ const App = () => {
               <motion.div
                 key={index}
                 variants={cardVariants}
-                className="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden hover:scale-105 transition"
+                className="bg-neutral-900 border border-neutral-800 rounded-3xl overflow-hidden hover:scale-102 transition"
               >
                 <img
                   src={project.image}
